@@ -1,0 +1,7 @@
+src/
+webpack/
+.editorconfig
+.prettierrc
+template.ejs
+tsconfig
+yarn.lock
