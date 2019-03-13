@@ -1,8 +1,9 @@
 {
-  "name": "mst-workflow",
-  "version": "0.0.1-a1",
+  "name": "@jimengio/safe-property",
+  "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "./lib/property.js",
+  "types": "./lib/property.d.ts",
   "scripts": {
     "dev": "webpack-dev-server --hot --config webpack/dev.js",
     "watch": "webpack-dev-server --hot --config webpack/dev.js",
