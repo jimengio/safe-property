@@ -1,7 +1,7 @@
 var path = require("path");
 var webpack = require("webpack");
 var HtmlWebpackPlugin = require("html-webpack-plugin");
-let HtmlIncludeAssetsPlugin = require("html-webpack-include-assets-plugin");
+var HtmlWebpackTagsPlugin = require("html-webpack-tags-plugin");
 
 let { matchCssRule, matchFontsRule, matchTsRule } = require("./shared");
 let splitChunks = require("./split-chunks");
@@ -44,9 +44,6 @@ module.exports = {
       filename: "index.html",
       template: "template.ejs",
     }),
-    new HtmlIncludeAssetsPlugin({
-      assets: [`dll/${dllManifest.name}.js`],
-      append: false,
-    }),
+    new HtmlWebpackTagsPlugin({ tags: [`dll/${dllManifest.name}.js`], append: true }),
   ],
 };
