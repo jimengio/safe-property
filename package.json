@@ -12,7 +12,7 @@
     "release": "rm -rfv dist/* && yarn dll-release && time webpack --progress --config webpack/release.js",
     "build": "yarn release",
     "serve": "http-server dist/ -s",
-    "compile": "tsc -d --jsx react prop/*.ts --outDir lib/",
+    "compile": "tsc -d --jsx react src/*.ts --outDir lib/",
     "prepublish": "yarn compile",
     "test": "jest",
     "postinstall": "rm -rfv node_modules/@types/*/node_modules/@types/react"

@@ -1,4 +1,4 @@
-import { safeGet, safeGet2, safeGet3, safeGet4, safeProp, safeSet, safeSet2, safeSet3, safeSet4 } from "../prop/property";
+import { safeGet, safeGet2, safeGet3, safeGet4, safeProp, safeSet, safeSet2, safeSet3, safeSet4 } from "../src/property";
 
 test("call saveGet on data", () => {
   let a = { a: 1 };

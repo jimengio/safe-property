@@ -12,7 +12,7 @@ let dllManifest = require("./dll/manifest-release.json");
 module.exports = {
   mode: "production",
   entry: {
-    main: ["./src/main.tsx"],
+    main: ["./example/main.tsx"],
   },
   output: {
     filename: "[name].[chunkhash:8].js",
