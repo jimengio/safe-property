@@ -44,6 +44,6 @@ module.exports = {
       filename: "index.html",
       template: "template.ejs",
     }),
-    new HtmlWebpackTagsPlugin({ tags: [`dll/${dllManifest.name}.js`], append: true }),
+    new HtmlWebpackTagsPlugin({ tags: [`dll/${dllManifest.name}.js`], append: false }),
   ],
 };
